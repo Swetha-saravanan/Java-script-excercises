@@ -1,33 +1,27 @@
      
-      function operator() {
+      function calculate() {
            event.preventDefault();
-           let a = document.getElementById("number1").value;
-           let b =document.getElementById("number2").value;
-           console.log(a.value);
-           console.log(b.value);
-           let add= a.value + b.value;
-           let sub=a.value - b.value;
-           let multiple = a.value * b.value;
-           let divison = a.value / b.value;
-           let exponent=(a.value)**(b.value);
-           let remainder=(a.value)%(b.value);
-           if(operator=="Addition(+)") {
-                document.getElementById("result").value=add.value;
+           let a = parseFloat(document.getElementById("number1").value);
+           let b =parseFloat(document.getElementById("number2").value);
+           let c=document.getElementById("operators").value;
+           console.log(c)
+           if(c=="Addition(+)") {
+                document.getElementById("result").value=a+b;
            }
-           else if(operator=="Subtraction") {
-                document.getElementById("result").value=sub.value;
+          if(c=="Subtraction(-)") {
+                document.getElementById("result").value=a-b;
           }
-           else if(operator=="Multipication") {
-               document.getElementById("result").value=multiple.value;
+           if(c=="Multipication(*)") {
+               document.getElementById("result").value=a*b;
           }
-           else if(operator=="Division(/)"){
-               document.getElementById("result").value=division.value;
+            if(c=="Division(/)"){
+               document.getElementById("result").value=a/b;
           }
-           else if(operator=="Exponent(**)") {
-               document.getElementById("result").value=exponent.value;
+           if(c=="Exponent(**)") {
+               document.getElementById("result").value=a**b;
           }
-           else if(operator=="Remainder(%)") {
-               document.getElementById("result").value=remainder.value;
+            if(c=="Remainder(%)") {
+               document.getElementById("result").value=a%b;
           }
       }
     

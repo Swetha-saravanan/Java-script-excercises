@@ -2,7 +2,7 @@
 <html>
     <head>
         <style>
-          input[type=number] {
+          input[type=tel] {
            border-radius :10px;
            padding : 10px 10px;
            width:300px;   }
@@ -18,19 +18,21 @@
     <body>
         <div align="center">
             <h1>Simple calculator</h1>
-            <form>
-                <h2>Enter the first number</h2><input type="number" id="number1">
-                <h2>Enter the second number</h2><input type="number" id="number2"><br><br>
+            <form onsubmit="calculate()">
+                <h2>Enter the first number</h2><input type="tel" id="number1">
+                <h2>Enter the second number</h2><input type="tel" id="number2"><br><br>
                 
-                <select name="operators",onclick="operator()" id="select">
+                <select id="operators" >
                     <option value="Addition(+)">Addition(+)</option>
                     <option value="Subtraction(-)">Subtraction(-)</option>
                     <option value="Multipication(*)">Multipication(*)</option>
                     <option value = "Division(/)">Division(/)</option>
                     <option value = "Exponent(**)"> Exponent(**)</option>
                     <option value="Remainder(%)">Remainder(%)</option>
-                </select>
-                <h2>Result</h2><input type ="number" id="result">
+                </select><br><br>
+                <button type="submit">Calculate</button>
+
+                <h2>Result</h2><input type ="tel" id="result">
             </form>
         </div>
     </body>
