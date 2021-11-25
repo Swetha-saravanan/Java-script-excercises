@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          input[type=number] {
+           border-radius :10px;
+           padding : 10px 10px;
+           width:300px;   }
+          
+        select {
+              border-radius : 10px;
+              padding : 10px 10px;
+              width : 300px;
+          }
+        </style>
+        <script type="text/javascript" src="functions.js"></script>
+    </head>
+    <body>
+        <div align="center">
+            <h1>Simple calculator</h1>
+            <form>
+                <h2>Enter the first number</h2><input type="number" id="number1">
+                <h2>Enter the second number</h2><input type="number" id="number2"><br><br>
+                
+                <select name="operators",onclick="operator()" id="select">
+                    <option value="Addition(+)">Addition(+)</option>
+                    <option value="Subtraction(-)">Subtraction(-)</option>
+                    <option value="Multipication(*)">Multipication(*)</option>
+                    <option value = "Division(/)">Division(/)</option>
+                    <option value = "Exponent(**)"> Exponent(**)</option>
+                    <option value="Remainder(%)">Remainder(%)</option>
+                </select>
+                <h2>Result</h2><input type ="number" id="result">
+            </form>
+        </div>
+    </body>
+</html>
