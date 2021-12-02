@@ -4,7 +4,6 @@
            let a = parseFloat(document.getElementById("number1").value);
            let b =parseFloat(document.getElementById("number2").value);
            let c=document.getElementById("operators").value;
-           console.log(c)
            if(c=="Addition(+)") {
                 document.getElementById("result").value=a+b;
            }
@@ -22,7 +21,7 @@
           }
             if(c=="Remainder(%)") {
                document.getElementById("result").value=a%b;
-          }
+           }
       }
     
      

@@ -11,6 +11,6 @@ function difference(){
   console.log(value1.value);
   console.log(value2.value);
   let minus=sub(+value2.value,+value2.value);
-  console.log(minus);
+  console.log(minus); 
 }
 
